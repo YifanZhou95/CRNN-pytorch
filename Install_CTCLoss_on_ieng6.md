@@ -17,7 +17,7 @@ mkdir build
 cd build
 cmake ..
 make
-CUDA_HOME=/usr/local/cuda-8.0 python
+export CUDA_HOME=/usr/local/cuda-8.0 python
 python ~/warp-ctc/pytorch_binding/setup.py install --install-lib ~/warp-ctc/lib
 ```
 
