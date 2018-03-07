@@ -13,12 +13,6 @@ class IIIT5K(Dataset):
         curr_dir=os.path.join(root_dir,'train' if train else 'test')
         file=open(os.path.join(root_dir,'train_Data.txt' if train else 'test_Data.txt'))
         self.files={os.path.join(curr_dir,line.strip().split(',')[0]):line.strip().split(',')[1] for line in file}
-        vocab=[chr(ord('a')+i) for i in range(26)]+[chr(ord('A')+i) for i in range(26)]+[chr(ord('0')+i) for i in range(10)]
-        self.chrToindex={}
-        cnt=0
-        for c in vocab:
-            self.chrToindex[c]=cnt
-            cnt+=1
                  
     def __len__(self):
         return len(self.files)
