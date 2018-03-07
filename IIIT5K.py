@@ -4,7 +4,7 @@ import torchvision.transforms as transforms
 from torch.utils.data import Dataset, DataLoader
 import PIL
 
-class III5K(Dataset):
+class IIIT5K(Dataset):
     
     def __init__(self, root_dir, transform=None, train = True):
         self.root_dir = root_dir
