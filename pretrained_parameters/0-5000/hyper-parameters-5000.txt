@@ -1,0 +1,3 @@
+init_lr=4e-3
+aneal_step=20
+aneal_rate=0.8
